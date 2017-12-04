@@ -12,6 +12,11 @@
 		DBBC7A891FD1A26200417D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBC7A871FD1A26200417D60 /* Main.storyboard */; };
 		DBBC7A8B1FD1A26200417D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBBC7A8A1FD1A26200417D60 /* Assets.xcassets */; };
 		DBBC7A8E1FD1A26200417D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBBC7A8C1FD1A26200417D60 /* LaunchScreen.storyboard */; };
+		DBEDC7891FD1A6E00012C49A /* WheelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEDC7881FD1A6E00012C49A /* WheelItem.swift */; };
+		DBEDC78C1FD1AB0C0012C49A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEDC78B1FD1AB0C0012C49A /* UIColorExtensions.swift */; };
+		DBEDC78D1FD1B0040012C49A /* WheelMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC7A971FD1A39900417D60 /* WheelMenuCollectionViewCell.swift */; };
+		DBEDC78E1FD1B0070012C49A /* WheelCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC7A9C1FD1A39900417D60 /* WheelCollectionViewLayout.swift */; };
+		DBEDC7901FD1B09C0012C49A /* NumbersExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEDC78F1FD1B09C0012C49A /* NumbersExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		DBBC7A8A1FD1A26200417D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBBC7A8D1FD1A26200417D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBBC7A8F1FD1A26200417D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBBC7A971FD1A39900417D60 /* WheelMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		DBBC7A9C1FD1A39900417D60 /* WheelCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelCollectionViewLayout.swift; sourceTree = "<group>"; };
+		DBEDC7881FD1A6E00012C49A /* WheelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelItem.swift; sourceTree = "<group>"; };
+		DBEDC78B1FD1AB0C0012C49A /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		DBEDC78F1FD1B09C0012C49A /* NumbersExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		DBBC7A821FD1A26200417D60 /* WheelMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DBEDC78A1FD1AAB90012C49A /* Extensions */,
+				DBBC7A951FD1A39900417D60 /* Wheel Layout */,
 				DBBC7A831FD1A26200417D60 /* AppDelegate.swift */,
 				DBBC7A851FD1A26200417D60 /* ViewController.swift */,
 				DBBC7A871FD1A26200417D60 /* Main.storyboard */,
@@ -62,6 +74,25 @@
 				DBBC7A8F1FD1A26200417D60 /* Info.plist */,
 			);
 			path = WheelMenu;
+			sourceTree = "<group>";
+		};
+		DBBC7A951FD1A39900417D60 /* Wheel Layout */ = {
+			isa = PBXGroup;
+			children = (
+				DBBC7A971FD1A39900417D60 /* WheelMenuCollectionViewCell.swift */,
+				DBBC7A9C1FD1A39900417D60 /* WheelCollectionViewLayout.swift */,
+				DBEDC7881FD1A6E00012C49A /* WheelItem.swift */,
+			);
+			path = "Wheel Layout";
+			sourceTree = "<group>";
+		};
+		DBEDC78A1FD1AAB90012C49A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DBEDC78B1FD1AB0C0012C49A /* UIColorExtensions.swift */,
+				DBEDC78F1FD1B09C0012C49A /* NumbersExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBBC7A861FD1A26200417D60 /* ViewController.swift in Sources */,
+				DBEDC78D1FD1B0040012C49A /* WheelMenuCollectionViewCell.swift in Sources */,
+				DBEDC78E1FD1B0070012C49A /* WheelCollectionViewLayout.swift in Sources */,
+				DBEDC7901FD1B09C0012C49A /* NumbersExtensions.swift in Sources */,
 				DBBC7A841FD1A26200417D60 /* AppDelegate.swift in Sources */,
+				DBEDC7891FD1A6E00012C49A /* WheelItem.swift in Sources */,
+				DBEDC78C1FD1AB0C0012C49A /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +311,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94LFBM5J7Z;
+				DEVELOPMENT_TEAM = 69968RWNNZ;
 				INFOPLIST_FILE = WheelMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogerserentill.WheelMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +327,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94LFBM5J7Z;
+				DEVELOPMENT_TEAM = 69968RWNNZ;
 				INFOPLIST_FILE = WheelMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rogerserentill.WheelMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
